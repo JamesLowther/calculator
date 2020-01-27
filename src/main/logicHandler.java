@@ -71,12 +71,12 @@ public class logicHandler {
 		else {
 			
 			int i;
-			float op1, op2;
+			double op1, op2;
 			
 			if (exp_list.contains("/")) {
 				i = exp_list.indexOf("/");
-				op1 = (float) exp_list.get(i-1);
-				op2 = (float) exp_list.get(i+1);
+				op1 = (double) exp_list.get(i-1);
+				op2 = (double) exp_list.get(i+1);
 				exp_list.set(i, op1 / op2);
 				
 				exp_list.remove(i+1);
@@ -84,8 +84,8 @@ public class logicHandler {
 			}
 			else if (exp_list.contains("*")) {
 				i = exp_list.indexOf("*");
-				op1 = (float) exp_list.get(i-1);
-				op2 = (float) exp_list.get(i+1);
+				op1 = (double) exp_list.get(i-1);
+				op2 = (double) exp_list.get(i+1);
 				exp_list.set(i, op1 * op2);
 				
 				exp_list.remove(i+1);
@@ -93,8 +93,8 @@ public class logicHandler {
 			}
 			else if (exp_list.contains("+")) {
 				i = exp_list.indexOf("+");
-				op1 = (float) exp_list.get(i-1);
-				op2 = (float) exp_list.get(i+1);
+				op1 = (double) exp_list.get(i-1);
+				op2 = (double) exp_list.get(i+1);
 				exp_list.set(i, op1 + op2);
 				
 				exp_list.remove(i+1);
@@ -103,8 +103,8 @@ public class logicHandler {
 			else {
 				i = exp_list.indexOf("-");
 				System.out.println(exp_list);
-				op1 = (float) exp_list.get(i-1);
-				op2 = (float) exp_list.get(i+1);
+				op1 = (double) exp_list.get(i-1);
+				op2 = (double) exp_list.get(i+1);
 				exp_list.set(i, op1 - op2);
 				
 				exp_list.remove(i+1);
@@ -158,10 +158,10 @@ public class logicHandler {
 			c_display = c_display + text;
 			
 			if (exp_list.size() != 0 && !operators.contains(exp_list.get(exp_list.size()-1))) {
-				exp_list.set(exp_list.size()-1, Float.parseFloat(Integer.toString(Math.round((float)exp_list.get(exp_list.size()-1))) + text));
+				exp_list.set(exp_list.size()-1, Double.parseDouble(Long.toString(Math.round((double)exp_list.get(exp_list.size()-1))) + text));
 			}
 			else {
-				exp_list.add(Float.parseFloat(text));
+				exp_list.add(Double.parseDouble(text));
 			}
 		} 
 		
