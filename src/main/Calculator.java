@@ -1,7 +1,7 @@
 package main;
 
 import main.gui.MainGUI;
-import main.logicHandler;
+import main.LogicHandler;
 
 public class Calculator {
 
@@ -9,7 +9,7 @@ public class Calculator {
 		
 		// create GUI object
 		
-		logicHandler lh = new logicHandler();
+		LogicHandler lh = new LogicHandler();
 		
 		MainGUI gui = new MainGUI(lh);
 		
