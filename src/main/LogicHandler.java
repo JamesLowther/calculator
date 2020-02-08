@@ -7,7 +7,7 @@ import java.text.DecimalFormat;
 
 import main.gui.MainGUI;
 
-public class logicHandler {
+public class LogicHandler {
 
 	private MainGUI gui;
 	

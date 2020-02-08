@@ -3,13 +3,13 @@ package main.gui;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-import main.logicHandler;
+import main.LogicHandler;
 
 public class JButtonActionHandler implements ActionListener {
 	
-	private logicHandler lh;
+	private LogicHandler lh;
 	
-	public JButtonActionHandler (logicHandler lh) {
+	public JButtonActionHandler (LogicHandler lh) {
 		
 		this.lh = lh;
 	

@@ -1,7 +1,7 @@
 package main.gui;
 
 import javax.swing.*;
-import main.logicHandler;
+import main.LogicHandler;
 import javax.swing.border.Border;
 
 import java.awt.*;
@@ -22,9 +22,9 @@ public class MainGUI {
 	
 	private JButtonActionHandler a_handler;
 	
-	private logicHandler lh;
+	private LogicHandler lh;
 	
-	public MainGUI (logicHandler lh) {
+	public MainGUI (LogicHandler lh) {
 		
 		this.lh = lh;
 		
